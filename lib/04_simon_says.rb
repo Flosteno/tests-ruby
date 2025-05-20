@@ -32,7 +32,11 @@ def titleize(string)
     if index == 0
       word.capitalize
     else
-      little_words.include?(word) ? word : word.capitalize
+      # Affiche en minuscule tout les mots inférieur à 3
+      #word <= 3 ? word : word.capitalize 
+
+      #Si correspond à la liste des mots affiche en minuscule
+      little_words.include?(word) ? word : word.capitalize 
     end
   end
     return capitalized.join(" ")
